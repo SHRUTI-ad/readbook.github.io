@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="with=device-width, initial-scale=1.0">
+<title>University Website Design - Easy Tutuorials</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="images/logo5.png"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">SUBJECTS</a></li>
+                <li><a href="blog.html">FUN</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+        <h2>So many books, so little time.</h2>
+        <h3>Find your right e-book here</h3> <p>Accessible everywhere just start reading them within minutes, without leaving your chair.</p>
+        <a href=""class="hero-btn">Search your e-book</a>
+        </div>
+
+    </section>
+
+<!------ Course ------>
+
+<section class="course">
+    <h1>Subjects We Have</h1>
+    <p>There are many little ways to enlarge your world. Love for books is the best of all.</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Science</h3>
+            <p>Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.</p>
+        </div>
+        <div class="course-col">
+            <h3>Commerce</h3>
+            <p>Mistakes are painful when they happen. But year’s later collection of mistakes is called experience, which lead to success.</p>
+        </div>
+        <div class="course-col">
+            <h3>Arts</h3>
+            <p>There are two distinct languages. There is the verbal, which separates people… and there is the visual that is understood by everybody.</p>
+        </div>
+    </div>
+
+
+</section>
+
+<!---- campus ----->
+
+<section class="campus">
+    <h1>Try something new in Life.</h1>
+    <p>Trust yourself, you know more than you think you do.</p>
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/engineering.jpg">
+            <div class="layer">
+                <h3>ENGINEERING</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/medicine.jpg">
+            <div class="layer">
+                <h3>MEDICINE</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/law.jpg">
+            <div class="layer">
+                <h3>LAW</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+</section>
+<!----- Facilities ------>
+
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>The best way to predict the future is to invent it.</p>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/library.jpg">
+            <h3>Open Source Library</h3>
+            <p>Check the content then download the required e-book</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/navigate.jpg">
+            <h3>Easy Accessibility</h3>
+            <p>Here you can fiest check content then download the e-book.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/variety.jpg">
+            <h3>Variety of Books</h3>
+            <p>We have a diversity of books available.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<!-------- testimonials ---------->
+
+<section class="testimonials">
+    <h1>What Our Readers Says</h1>
+    <p>If your actions inspire others to dream more, learn more, do more and become more, you are a leader.</p>
+
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="images/user1.jpg">
+            <div>
+            <p>This place is good for study. This is one of the most organised, well set out e-book website I’ve been to.</p>
+                <h3>Christine Berkley</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="images/user2.jpg">
+        <div>
+        <p>Very good collection on Science, Engineering, Medicine, Business, etc amazing resources. </p>
+    <h3>David Byer</h3>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+     <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+     <i class="fa fa-star-o"></i>
+    </div>
+</div>
+    </div>
+
+</section>
+
+<!----- Call TO Action -------->
+
+<section class="cta">
+    <h1>Notify us if you have any query<br>Anywhere From The World</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+</section>
+
+
+<!----- Call TO Footer -------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Team Read Book is a platform which believe in Learning Together and aims to help readers to navigate e-books.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Team Read Book</p>
+</section>
+
+
+<!------JavaScript for Toggle Menu------>
+    <script>
+
+    var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</boby>
+</html>
