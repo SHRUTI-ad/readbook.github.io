@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="with=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>University Website Design - Easy Tutuorials</title>
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -63,16 +63,17 @@
 
 
 <!------JavaScript for Toggle Menu------>
-    <script>
+<script>
+    var navLinks = document.getElementById("navlinks");
 
-    var navLinks = document.getElementById("navLinks");
-        function showMenu(){
-            navLinks.style.right = "0";
-        }
-        function hideMenu(){
-            navLinks.style.right = "-200px";
-        }
-    </script>
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
 
-</boby>
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
 </html>
